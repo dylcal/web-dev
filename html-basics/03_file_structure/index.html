@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <title>Pagina con struttura</title>
+</head>
+<body>
+    <img src="img/perso.png" width="350" alt="Person holding a computer!"/>
+    <div class="esempioDiv">
+        DIV serve per raggruppare gli elementi!
+        <p>
+           Anche questo paragrafo è a livello del blocco div! 
+        </p>
+        <p>
+            Questo testo, pur appartenendo allo stesso div del testo precedente, viene reso su una riga diversa :-)!
+        </p>
+    </div>
+    <div class="esempioDiv">
+        Proprio perché anche il secondo DIV raggruppa, questo testo è rappresentato su un'altra riga!
+        <span class="commento">
+            SPAN è un elemento inline utilizzato per renderizzare testi sulla stessa riga! 
+            Questa frase sarà visualizzata immediatamente dopo il testo del DIV!
+        </span>
+    </div>
+    <style>
+        /*Aggiunta classe, possibile anche div.esempioDIV{ }*/
+        div{
+            font-size: 20px;
+            font-family: "Courier New";
+            font-style: italic; /*Attenzione: questo si applica a tutti i div, quindi anche allo span dentro al div!*/
+        }
+      
+        span.commento{
+            font-size: 16px;
+            font-family: "Times New Roman";
+            font-style: normal;
+        }
+    </style>
+</body>
+</html>
